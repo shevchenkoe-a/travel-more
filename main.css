@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700&display=swap');
+
+@font-face {
+    font-family: 'aleo-bold-webfont';
+    src: url('font/aleo-bold-webfont.woff2') format('woff2'),
+    url('font/aleo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-light-webfont';
+    src: url('font/aleo-light-webfont.woff2') format('woff2'),
+    url('font/aleo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo-regular-webfont';
+    src: url('font/aleo-regular-webfont.woff2') format('woff2'),
+    url('font/aleo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    border: 7px solid #ffffff;
+    color: #ffffff;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background: url("img/header-img.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.travel-content{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header-content-title {
+    padding-top: 235px;
+}
+
+.header-content-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+
+}
+
+.header-content-title h3 {
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 6px;
+    margin-top: 6px;
+}
+
+form {
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-top: 26px;
+}
+input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 158px;
+    border: 2px solid #ffffff;
+    outline: none;
+
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+button {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    width: 150px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    background: #5474fd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background: #365bfa;
+}
+
+button span {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 14px;
+    margin-right: 14px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+button:after {
+    content: url("img/scale.svg");
+    font-size: 14px;
+    color: #F9F0DA;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+}
+
+
+.button-scroll {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+
+}
+
+.button-scroll:after {
+    content: url("img/scroll.svg");
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.travel-nav {
+    background: #5474fd;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 151px;
+
+}
+.travel-content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.travel-content-nav ul li {
+    list-style: none;
+    border: 2px solid transparent;
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.travel-content-nav ul {
+    display: flex;
+}
+
+.travel-content-nav ul li:nth-child(odd) {
+    margin-left: 43px;
+    margin-right: 34px;
+}
+
+.travel-content-nav ul li:hover {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+
+
+/*Main Choose Us*/
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#main-inner {
+    background: url("img/choose-us.png") no-repeat;
+    background-size: cover;
+}
+
+.travel-content-choose {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.travel-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+}
+
+.travel-choose h2 {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 36px;
+    margin-top: 60px;
+
+}
+
+.travel-choose h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 26px;
+    letter-spacing: 1px;
+
+}
+
+.travel-choose a {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    width: 41.3%;
+    height: 60px;
+    background: #5474fd;
+    padding-top: 23px;
+    margin-top: 10px;
+}
+
+
+.travel-choose a:hover {
+    background: #365bfa;
+}
+
+.main-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 51.5%;
+    padding-left: 8.5%;
+}
+
+.travel-content-choose .main-foto img:nth-child(1) {
+    padding-right: 123px;
+}
+
+.travel-content-choose .main-foto img:nth-child(2) {
+    padding-left: 124px;
+    padding-top: 3px;
+}
+
+/*main-inner2*/
+
+.main-inner2 {
+    background: #333333;
+}
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#shape {
+    background: url("img/shape.svg") no-repeat;
+    width: 789px;
+    height: 50px;
+    margin: 46px auto 0;
+}
+
+.icon span {
+    display: block;
+    text-align: center;
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 36px;
+    padding-top: 30px;
+}
+
+.main-inner2 .icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 108px;
+}
+
+.icon-search:before {
+    content: url("img/main-search.svg");
+
+
+}
+
+.icon-places:before {
+    content: url("img/main-places.svg");
+
+}
+
+.icon-enjoy:before {
+    content: url("img/main-enjoy.svg");
+
+}
+
+/*main-inner3*/
+
+.main-inner3 {
+    background: url("img/spain.jpg") no-repeat;
+    background-size: cover;
+}
+
+.madrid {
+    width: 48%;
+    float:left;
+    background: rgba(43, 38, 36, 0.8);
+    margin-top: 228px;
+    margin-bottom: 100px;
+    padding: 50px 30px 71px 30px;
+
+}
+
+.travel-spain:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-inner3 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+
+
+.main-inner3 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 31px;
+    letter-spacing: -1px;
+}
+
+.main-inner3 h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 71px;
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+}
+
+.main-inner3 a {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    background: #5474fd;
+    padding: 20px 66px 20px 66px;
+}
+
+.main-inner3 a:hover {
+    background: #365bfa;
+}
+
+
+
+.main-inner4 {
+    background: url("img/spain2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.madrid2 {
+    width: 48%;
+    float:right;
+    background: rgba(43, 38, 36, 0.8);
+    margin-top: 230px;
+    margin-bottom: 100px;
+    padding: 50px 30px 71px 30px;
+
+}
+
+.travel-spain2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-inner4 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+
+
+.main-inner4 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 31px;
+    letter-spacing: -1px;
+
+}
+
+.main-inner4 h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 71px;
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+
+}
+
+.main-inner4 a {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    background: #5474fd;
+    padding: 20px 66px 20px 66px;
+}
+
+.main-inner4 a:hover {
+    background: #365bfa;
+}
+
+
+.main-inner5 {
+    background: url("img/reviews-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.travel-reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.travel-reviews h2 {
+    font-family: "aleo-regular-webfont", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+    letter-spacing: 0.4px;
+}
+
+
+.block-reviews {
+    display: flex;
+    justify-content: center;
+    background: #333333;
+}
+
+
+.block-reviews img {
+    display: block;
+    width: 40%;
+
+}
+
+.reviews {
+    position: relative;
+    width: 60%;
+    padding: 46px 60px 46px 60px;
+}
+
+.reviews h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.reviews h5 {
+    text-indent: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 45px;
+    line-height: 1.6;
+    letter-spacing: -0.7px;
+    margin-bottom: 0;
+}
+
+.reviews i {
+    position: absolute;
+    color: #5474fd;
+    left: 33px;
+    top: 94px;
+    font-size: 20px;
+}
+
+
+footer {
+    width: 100%;
+}
+.footer-inner {
+    background: #232323;
+    background-size: cover;
+}
+
+.block-footer {
+    padding-top: 117px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.block-footer a {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+.block-footer h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.block-social {
+    margin-top: 28px;
+}
+
+.block-social a {
+    font-size: 16px;
+}
+
+.block-social a:nth-child(odd) {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+
+.block-social a:nth-child(1):hover {
+    color: #3b5998;
+}
+
+.block-social a:nth-child(2):hover {
+    color: #1da1f2;
+}
+
+.block-social a:nth-child(3):hover {
+    color: #006dc0;
+}
+
+.block-social a:nth-child(4):hover {
+    color: #de332c;
+}
+
+.block-social a:nth-child(5):hover {
+    color: #cb2027;
+}
